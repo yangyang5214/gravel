@@ -1,4 +1,6 @@
 ---
 title: contact
-date: 2020-07-11 23:46:40
+date: 2018-09-30 17:25:30
+type: "contact"
+layout: "contact"
 ---
