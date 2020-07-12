@@ -1,6 +1,6 @@
 ---
 title: jenkins
-tags: [u'java']
+tags: [java]
 date: 2020-02-26 01:12:55
 ---
 

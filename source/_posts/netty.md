@@ -1,6 +1,6 @@
 ---
 title: netty
-tags: [u'java']
+tags: [java]
 date: 2020-03-26 23:59:52
 ---
 

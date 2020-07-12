@@ -1,6 +1,6 @@
 ---
 title: oauth2
-tags: [u'java']
+tags: [java]
 date: 2020-02-13 11:39:02
 ---
 

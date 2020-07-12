@@ -1,6 +1,6 @@
 ---
 title: finereport
-tags: [u'tools']
+tags: [tools]
 date: 2020-02-22 09:26:08
 ---
 

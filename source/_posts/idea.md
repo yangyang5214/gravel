@@ -1,6 +1,6 @@
 ---
 title: idea
-tags: [u'tools']
+tags: [tools]
 date: 2020-02-27 02:49:48
 ---
 

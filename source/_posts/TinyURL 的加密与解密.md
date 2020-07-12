@@ -1,6 +1,6 @@
 ---
 title: TinyURL 的加密与解密
-tags: [u'leetcode']
+tags: [leetcode]
 date: 2020-01-27 10:20:39
 ---
 

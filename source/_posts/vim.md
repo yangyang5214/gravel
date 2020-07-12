@@ -1,6 +1,6 @@
 ---
 title: vim
-tags: [u'linux']
+tags: [linux]
 date: 2020-02-26 00:45:19
 ---
 
