@@ -365,7 +365,7 @@
 <p>2 &lt;= nums.length &lt;= 100<br>nums.length % 2 == 0<br>1 &lt;= nums[i] &lt;= 100</p>
 <p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/decompress-run-length-encoded-list" target="_blank" rel="noopener">https://leetcode-cn.com/problems/decompress-run-length-encoded-list</a></p>
 <p>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">public int[] decompressRLElist(int[] nums) &#123;<br>int length &#x3D; nums.length;<br>int resultLen &#x3D; 0;<br>for (int i &#x3D; 0; i &lt; length; i &#x3D; i + 2) &#123;<br>resultLen &#x3D; resultLen + nums[i];<br>&#125;<br>int[] results &#x3D; new int[resultLen];<br>int index &#x3D; 0;<br>for (int i &#x3D; 0; i &lt; length; i &#x3D; i + 2) &#123;<br>for (int j &#x3D; 0; j &lt; nums[i]; j++) &#123;<br>results[index++] &#x3D; nums[i + 1];<br>&#125;<br>&#125;<br>return results;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><figure class="highlight angelscript"><table><tr><td class="code"><pre><code class="hljs angelscript"><span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span>[] decompressRLElist(<span class="hljs-built_in">int</span>[] nums) &#123;<br><span class="hljs-built_in">int</span> length = nums.length;<br><span class="hljs-built_in">int</span> resultLen = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; length; i = i + <span class="hljs-number">2</span>) &#123;<br>resultLen = resultLen + nums[i];<br>&#125;<br><span class="hljs-built_in">int</span>[] results = new <span class="hljs-built_in">int</span>[resultLen];<br><span class="hljs-built_in">int</span> index = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; length; i = i + <span class="hljs-number">2</span>) &#123;<br><span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> j = <span class="hljs-number">0</span>; j &lt; nums[i]; j++) &#123;<br>results[index++] = nums[i + <span class="hljs-number">1</span>];<br>&#125;<br>&#125;<br><span class="hljs-keyword">return</span> results;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><p>总结题目意思就是：数组是满足条件 ：[a, b] = [nums[2*i] ，解压之后 是  a 个 b。</p>
 <p>例如：[a, b] = [6，7]，则加压之后是 [7, 7 ,7 ,7 ,7 ,7 ,7]</p>
@@ -641,7 +641,7 @@
                     <div class="summary block-with-text">
                         
                             https://leetcode-cn.com/problems/jewels-and-stones/
-给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。 S 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有
+ 给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。 S 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中
                         
                     </div>
                     <div class="publish-info">

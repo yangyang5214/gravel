@@ -367,14 +367,14 @@
 <li>第一次</li>
 </ul>
 <p><img src="https://beer-1256523277.cos.ap-shanghai.myqcloud.com/blog/20200125150215.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">public int findNumbers(int[] nums) &#123;<br>int result &#x3D; 0;<br>for (int num : nums) &#123;<br>int count &#x3D; 1;<br>while (true) &#123;<br>int x &#x3D; num &#x2F; 10;<br>if (x !&#x3D; 0) &#123;<br>num &#x3D; x;<br>count++;<br>&#125; else &#123;<br>break;<br>&#125;<br>&#125;<br>if (count % 2 &#x3D;&#x3D; 0) &#123;<br>result++;<br>&#125;<br>&#125;<br>return result;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><code class="hljs angelscript"><span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> findNumbers(<span class="hljs-built_in">int</span>[] nums) &#123;<br><span class="hljs-built_in">int</span> result = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> num : nums) &#123;<br><span class="hljs-built_in">int</span> count = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) &#123;<br><span class="hljs-built_in">int</span> x = num / <span class="hljs-number">10</span>;<br><span class="hljs-keyword">if</span> (x != <span class="hljs-number">0</span>) &#123;<br>num = x;<br>count++;<br>&#125; <span class="hljs-keyword">else</span> &#123;<br><span class="hljs-keyword">break</span>;<br>&#125;<br>&#125;<br><span class="hljs-keyword">if</span> (count % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) &#123;<br>result++;<br>&#125;<br>&#125;<br><span class="hljs-keyword">return</span> result;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 
 <ul>
 <li>第二次</li>
 </ul>
 <p><img src="https://beer-1256523277.cos.ap-shanghai.myqcloud.com/blog/20200125150752.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">public int findNumbers(int[] nums) &#123;<br>int count &#x3D; 0;<br>for (int num : nums) &#123;<br>if (String.valueOf(num).length() % 2 &#x3D;&#x3D; 0) &#123;<br>count++;<br>&#125;<br>&#125;<br>return count;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight reasonml"><table><tr><td class="code"><pre><code class="hljs reasonml">public <span class="hljs-built_in">int</span> find<span class="hljs-constructor">Numbers(<span class="hljs-params">int</span>[] <span class="hljs-params">nums</span>)</span> &#123;<br><span class="hljs-built_in">int</span> count = <span class="hljs-number">0</span>;<br>for (<span class="hljs-built_in">int</span> num : nums) &#123;<br><span class="hljs-keyword">if</span> (<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">String</span>.</span></span>value<span class="hljs-constructor">Of(<span class="hljs-params">num</span>)</span>.length<span class="hljs-literal">()</span> % <span class="hljs-number">2</span><span class="hljs-operator"> == </span><span class="hljs-number">0</span>) &#123;<br>count++;<br>&#125;<br>&#125;<br>return count;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ol>
 <li>判断一个数有多少位数</li>
@@ -697,7 +697,7 @@
                     <div class="summary block-with-text">
                         
                             https://leetcode-cn.com/problems/jewels-and-stones/
-给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。 S 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有
+ 给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。 S 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中
                         
                     </div>
                     <div class="publish-info">
