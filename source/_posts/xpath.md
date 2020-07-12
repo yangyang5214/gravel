@@ -1,6 +1,6 @@
 ---
 title: xpath
-tags: ['scrapy']
+tags: [u'scrapy']
 date: 2020-02-14 07:07:43
 ---
 

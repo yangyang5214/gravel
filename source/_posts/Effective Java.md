@@ -1,6 +1,6 @@
 ---
 title: Effective Java
-tags: ['book']
+tags: [u'book']
 date: 2020-06-07 23:11:51
 ---
 
