@@ -378,22 +378,22 @@
 <li>缺点</li>
 </ol>
 <p>方法调用是栈操作，嵌太多，会栈溢出。</p>
-<h3 id="阶乘"><a href="#阶乘" class="headerlink" title="阶乘"></a>阶乘</h3><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">public int fun1(int n) &#123;<br>if (n &#x3D;&#x3D; 1) &#123;<br>return 1;<br>&#125;<br>return n * fun1(n - 1);<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="阶乘"><a href="#阶乘" class="headerlink" title="阶乘"></a>阶乘</h3><figure class="highlight angelscript"><table><tr><td class="code"><pre><code class="hljs angelscript"><span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> fun1(<span class="hljs-built_in">int</span> n) &#123;<br><span class="hljs-keyword">if</span> (n == <span class="hljs-number">1</span>) &#123;<br><span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>&#125;<br><span class="hljs-keyword">return</span> n * fun1(n - <span class="hljs-number">1</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h3 id="获取二叉树的最大深度"><a href="#获取二叉树的最大深度" class="headerlink" title="获取二叉树的最大深度"></a>获取二叉树的最大深度</h3><ul>
 <li>TreeNode</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">public class TreeNode &#123;<br><br>public int val;<br>public TreeNode left;<br>public TreeNode right;<br><br>public TreeNode(int x) &#123;<br>val &#x3D; x;<br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><code class="hljs angelscript"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-symbol">TreeNode</span> &#123;<br><br><span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> val;<br><span class="hljs-keyword">public</span> TreeNode left;<br><span class="hljs-keyword">public</span> TreeNode right;<br><br><span class="hljs-keyword">public</span> TreeNode(<span class="hljs-built_in">int</span> x) &#123;<br>val = x;<br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <ul>
 <li>获取树的最大深度</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">public int getMaxDeep(TreeNode treeNode) &#123;<br>if (treeNode &#x3D;&#x3D; null) &#123;<br>return 0;<br>&#125;<br>int left &#x3D; getMaxDeep(treeNode.left);<br>int right &#x3D; getMaxDeep(treeNode.right);<br>return Math.max(left, right) + 1;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight reasonml"><table><tr><td class="code"><pre><code class="hljs reasonml">public <span class="hljs-built_in">int</span> get<span class="hljs-constructor">MaxDeep(TreeNode <span class="hljs-params">treeNode</span>)</span> &#123;<br><span class="hljs-keyword">if</span> (treeNode<span class="hljs-operator"> == </span>null) &#123;<br>return <span class="hljs-number">0</span>;<br>&#125;<br><span class="hljs-built_in">int</span> left = get<span class="hljs-constructor">MaxDeep(<span class="hljs-params">treeNode</span>.<span class="hljs-params">left</span>)</span>;<br><span class="hljs-built_in">int</span> right = get<span class="hljs-constructor">MaxDeep(<span class="hljs-params">treeNode</span>.<span class="hljs-params">right</span>)</span>;<br>return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Math</span>.</span></span>max(left, right) + <span class="hljs-number">1</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <ul>
 <li>获取指定深度的和</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">public int dfs(TreeNode treeNode, int currentH, int h) &#123;<br>if (treeNode &#x3D;&#x3D; null) &#123;<br>return 0;<br>&#125;<br>if (currentH &#x3D;&#x3D; h) &#123;<br>return treeNode.val;<br>&#125;<br>return dfs(treeNode.left, currentH + 1, h) + dfs(treeNode.right, currentH + 1, h);<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><code class="hljs angelscript"><span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> dfs(TreeNode treeNode, <span class="hljs-built_in">int</span> currentH, <span class="hljs-built_in">int</span> h) &#123;<br><span class="hljs-keyword">if</span> (treeNode == <span class="hljs-literal">null</span>) &#123;<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><span class="hljs-keyword">if</span> (currentH == h) &#123;<br><span class="hljs-keyword">return</span> treeNode.val;<br>&#125;<br><span class="hljs-keyword">return</span> dfs(treeNode.left, currentH + <span class="hljs-number">1</span>, h) + dfs(treeNode.right, currentH + <span class="hljs-number">1</span>, h);<br>&#125;<br></code></pre></td></tr></table></figure>
 
 
 
@@ -732,7 +732,7 @@ TinyURL是一种URL简化服务， 比如：当你输入一个URL https://leetco
                             https://leetcode-cn.com/problems/deepest-leaves-sum/
 给你一棵二叉树，请你返回层数最深的叶子节点的和。
 
-输入：root &#x3D; [1,2,3,4,5,null,6,7,null,n
+输入：root = [1,2,3,4,5,null,6,7,null,null,n
                         
                     </div>
                     <div class="publish-info">

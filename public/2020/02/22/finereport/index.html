@@ -361,7 +361,7 @@
 <blockquote>
 <p>mysql 居然只支持到 5.7 🙄。Mac 默认是 8.x，需要下载指定版本</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">brew install mysql@5.7<br>brew services start mysql@5.7<br></code></pre></td></tr></table></figure>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><code class="hljs angelscript">brew install <span class="hljs-symbol">mysql@</span><span class="hljs-number">5.7</span><br>brew services start <span class="hljs-symbol">mysql@</span><span class="hljs-number">5.7</span><br></code></pre></td></tr></table></figure>
 
 <p>接 <a href="https://www.hexianwei.com/2019/01/06/FineReport-10.0/" target="_blank" rel="noopener">FineReport \| beer</a> ，继续写<del>~</del></p>
 <hr>
@@ -646,7 +646,7 @@
                             
 vim 常用命令
 
-替换# 替换当前行所有 a 为 b:s&#x2F;a&#x2F;b&#x2F;g# 替换所有 a 为 b:%s&#x2F;a&#x2F;b&#x2F;g
+替换# 替换当前行所有 a 为 b:s/a/b/g# 替换所有 a 为 b:%s/a/b/g
 
 
 
@@ -697,9 +697,10 @@ vim 常用命令
                     <div class="summary block-with-text">
                         
                             取前几个position()&lt;=n
-&#x2F;&#x2F;dl[@class&#x3D;&quot;collateral-tabs&quot;]&#x2F;&#x2F;dd[position()&lt;&#x3D;2]
+//dl[@class="collateral-tabs"]//dd[position()&lt;=2]
 
-取最后一个
+取最后一个last()
+//dl[@class="collateral-tabs"]//d
                         
                     </div>
                     <div class="publish-info">
