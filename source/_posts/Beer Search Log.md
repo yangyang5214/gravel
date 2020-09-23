@@ -156,7 +156,7 @@ alias npm='/home/pi/java/node-v14.0.0-linux-armv7l/bin/npm'
 
 
 
-### 2020-07-16
+## 2020-07-16
 
 - postgresql 安装
 
@@ -173,5 +173,65 @@ alter user pi with superuser;
 create database pi;
 psql
 ```
+
+## 2020-07-17
+
+blog 没背景图片了，先爬一些背景图片玩玩吧。
+
+http://www.win4000.com/meinvtag4_1.html
+
+```
+cd spiders
+scrapy genspider meitu 'http://www.win4000.com/meinvtag4_1.html'
+```
+
+新建 SpiderBase 类。整合一些方法
+
+```
+def remove_url_params(self, url):
+return url[:url.find('?')]
+```
+
+
+## 2020-07-18
+
+
+接着昨天的爬背景图片。
+
+http://www.win4000.com/meinvtag4_1.html
+
+
+commit: https://github.com/yangyang5214/beer_search/commit/1eda9219d0ed4a4f606747564cf23d7dbc586fa1
+
+文件: spider_win4000.py
+
+
+运行:
+```
+python spider_main.py -n win4000
+```
+
+爬下来整合到 blog 的背景图片。
+
+```
+
+if __name__ == '__main__':
+import os
+
+# 重命名
+index = 0
+path = '/Users/beer/code/gravel/themes/hexo-theme-matery/source/medias/featureimages/'
+for file in os.listdir(path):
+file_path = path + file
+os.system('mv {} {}.jpg'.format(file_path, path + index))
+index = index + 1
+
+# 生成 featureImages
+for i in range(500):
+print("  - /medias/featureimages/{}.jpg".format(i))
+```
+
+
+
 
 
