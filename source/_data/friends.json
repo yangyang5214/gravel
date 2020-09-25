@@ -5,5 +5,12 @@
     "introduction": "My shadow",
     "url": "https://www.hexianwei.com/",
     "title": "Ping beer"
+  },
+  {
+    "avatar": "https://beef-1256523277.cos.ap-chengdu.myqcloud.com/bed/20200925215548.png",
+    "name": "tools",
+    "introduction": "beer tools",
+    "url": "https://tools.hexianwei.com/",
+    "title": "Beer tools"
   }
 ]

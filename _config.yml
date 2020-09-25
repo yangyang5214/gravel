@@ -8,7 +8,7 @@ subtitle: ''
 description: ''
 keywords:
 author: Beef
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -52,6 +52,36 @@ highlight:
   tab_replace: '    '
   wrap: true
   hljs: true
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
+
+search:
+  path: search.xml
+  field: post
+
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+
+postInfo:
+  date: true
+  update: false
+  wordCount: true # 设置文章字数统计为 true.
+  totalCount: true # 设置站点文章总字数统计为 true.
+  min2read: true # 阅读时长.
+  readCount: true # 阅读次数.
+
+
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
