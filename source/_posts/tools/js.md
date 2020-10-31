@@ -1,9 +1,7 @@
 ---
 title: js
-tags: [tools]
-date: 2020-08-06 08:59:07
+tags: [js,tools]
 ---
-
 
 ### 滑到底部
 

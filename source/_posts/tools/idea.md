@@ -1,7 +1,6 @@
 ---
 title: idea
-tags: [tools]
-date: 2020-02-27 02:49:48
+tags: [idea,tools]
 ---
 
 ### 打开多个窗口设置

@@ -1,21 +1,18 @@
 ---
 title: alias
-tags: [alias,sh,tools]
-date: 2020-08-11 10:05:52
+tags: [linux,alias,tools]
 ---
-
 
 https://github.com/sharkdp/bat
 
-
 ### alias
-
+n
 ```
-alias cat='bat'
 alias cp='cp -v'
 alias mv='mv -v'
 alias grep="grep --color"
 alias mkdir="mkdir -pv"
+alias ll='ls -lht'
 alias df="df -h"
 alias du="du -h"
 alias ..="cd .."
@@ -26,6 +23,12 @@ alias d='date +"%Y-%m-%d"'
 alias dt='date +"%Y-%m-%d %H:%M:%S"'
 alias ds='date +"%s"'
 
+alias gpp='git pull --rebase && git push'
+alias gp='git pull'
+alias gb='git branch'
+alias gs='git status'
+alias gm='git commit -m'
+alias openc='open -a /'Google Chrome/''
 ```
 
 ### sh
@@ -35,7 +38,7 @@ alias ds='date +"%s"'
 
 ```
 if [ -f ~/.bash_aliases_beer ]; then
-. ~/.bash_aliases
+    . ~/.bash_aliases
 fi
 ```
 

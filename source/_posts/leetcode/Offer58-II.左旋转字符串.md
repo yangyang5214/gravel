@@ -1,7 +1,6 @@
 ---
 title: 剑指 Offer 58 - II. 左旋转字符串
-tags: [剑指offer]
-date: 2020-09-28 13:07:24
+tags: [leetcode,python]
 ---
 
 ### 题目
@@ -24,7 +23,7 @@ date: 2020-09-28 13:07:24
 
 ```
 def reverse_left_words(s: str, n: int) -> str:
-return s[n:] + s[0:n]
+    return s[n:] + s[0:n]
 ```
 
 

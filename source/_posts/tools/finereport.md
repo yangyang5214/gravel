@@ -1,22 +1,19 @@
 ---
 title: finereport
-tags: [tools]
-date: 2020-02-22 09:26:08
----
-
+tags: [finereport,tools]
 ---
 吐槽
 
 [支持的数据库](https://help.finereport.com/doc-view-2458.html#3)
 
-> mysql 居然只支持到 5.7 🙄。Mac 默认是 8.x，需要下载指定版本
+> mysql 居然只支持到 5.7 🙄。Mac 默认是 8.x，需要下载指定版本 
 
 ```
 brew install mysql@5.7
 brew services start mysql@5.7
 ```
 
-接 [FineReport \\| beer](https://www.hexianwei.com/2019/01/06/FineReport-10.0/) ，继续写~~~
+接 [FineReport \| beer](https://www.hexianwei.com/2019/01/06/FineReport-10.0/) ，继续写~~~
 
 
 ---

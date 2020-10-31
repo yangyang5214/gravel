@@ -1,7 +1,6 @@
 ---
 title: vim
-tags: [linux]
-date: 2020-02-26 00:45:19
+tags: [linux,vim]
 ---
 
 > vim 常用命令
@@ -11,11 +10,11 @@ date: 2020-02-26 00:45:19
 
 ```
 # 替换当前行所有 a 为 b
-:s/a/b/g
+:s/a/b/g 
 
 
 # 替换所有 a 为 b
-:%s/a/b/g
+:%s/a/b/g 
 ```
 
 
