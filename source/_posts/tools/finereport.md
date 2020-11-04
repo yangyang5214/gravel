@@ -8,7 +8,7 @@ tags: [finereport,tools]
 
 > mysql 居然只支持到 5.7 🙄。Mac 默认是 8.x，需要下载指定版本 
 
-```
+``` 
 brew install mysql@5.7
 brew services start mysql@5.7
 ```

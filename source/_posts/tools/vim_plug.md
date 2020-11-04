@@ -4,7 +4,6 @@ tags: [vim plug,tools]
 ---
 
 [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug)
-```
 
 ### create .vimrc
 
@@ -12,6 +11,7 @@ touch ~/.vimrc
 
 ### add  vim-plug
 
+``` 
 call plug#begin('~/.vim/plugged')
 
 Plug 'godlygeek/tabular'

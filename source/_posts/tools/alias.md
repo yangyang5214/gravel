@@ -7,7 +7,7 @@ https://github.com/sharkdp/bat
 
 ### alias
 
-```
+```shell script
 alias cp='cp -v'
 alias mv='mv -v'
 alias grep="grep --color"
@@ -28,7 +28,7 @@ alias gp='git pull'
 alias gb='git branch'
 alias gs='git status'
 alias gm='git commit -m'
-alias openc='open -a /'Google Chrome/''
+alias openc='open -a "Google Chrome"'
 ```
 
 ### sh
@@ -36,7 +36,7 @@ alias openc='open -a /'Google Chrome/''
 
 .bashrc file
 
-```
+```shell script
 if [ -f ~/.bash_aliases_beer ]; then
     . ~/.bash_aliases
 fi
@@ -47,7 +47,7 @@ source .bashrc
 
 ### timezone
 
-```
+```shell script
 sudo timedatectl set-timezone 'Asia/Shanghai'
 ```
 
@@ -55,7 +55,7 @@ sudo timedatectl set-timezone 'Asia/Shanghai'
 
 vim ~/.vimrc
 
-```
+```shell script
 syntax on	
 set number 
 set cindent

@@ -8,7 +8,7 @@ tags: [xpath,python]
 
 position()<=n
 
-```
+``` 
 //dl[@class="collateral-tabs"]//dd[position()<=2]
 ```
 
@@ -17,20 +17,20 @@ position()<=n
 last()
 
 
-```
+``` 
 //dl[@class="collateral-tabs"]//dd[last()]
 ```
 
 类似
 
-```
+``` 
 //dl[@class="collateral-tabs"]//dd[last()-1]
 //dl[@class="collateral-tabs"]//dd[last()-2]
 ```
 
 ### and
 
-```
+``` 
 <script type="text/javascript">
         var defaultPageData = {"page":{"country":"CN","language":"EN","designer":"","section":"handbags","categories":["handbags","newarrivals"],"type":"product detail"},"products":[],"site":{"name":"saks.com","is_mobile":"false","is_production":"true"},"visitor":{"account_id":"","currency_code":"CNY","email_address":"","logged_in":"false","loyalty_id":"","personalization_id":"","session_id":"1582602692332npPo069Ct-CuwJ1UDfsMFbHsp51u4xaVonbVTxEtyHNpF4tcTwZskHAh"}};
         var visitorData = defaultPageData.visitor || { currency_code : ''};
@@ -52,7 +52,7 @@ last()
 
 定位到当前的 script
 
-```
+``` 
 //script[@type="text/javascript" and contains(.,'var defaultPageData =')]
 
 转为 xpath:

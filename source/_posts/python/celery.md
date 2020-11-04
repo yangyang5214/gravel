@@ -50,7 +50,8 @@ worker 消费 broker 中的任务
 #### hello world
 
 创建一个 worker
-```
+
+``` 
 from celery import Celery
 
 # ssh -N -L 6379:127.0.0.1:6379 pi
@@ -63,14 +64,16 @@ def add(x, y):
 ```
 
 运行
-```
+
+``` 
 celery -A hello_world worker --loglevel=INFO
 
 -A, --app APPLICATION
 worker  Start worker instance.
 ```
 调用
-```
+
+``` 
 from hello_world import add
 
 add.delay(3, 4)
@@ -86,7 +89,7 @@ add.delay(10, 4)
 
 使用 backend
 
-```
+``` 
 from celery import Celery
 
 # ssh -N -L 6379:127.0.0.1:6379 pi
@@ -98,7 +101,7 @@ def add(x, y):
     return x + y
 ```
 
-```
+``` 
 from hello_world2 import add
 
 result = add.delay(3, 4)
@@ -122,7 +125,8 @@ app.conf.task_serializer = 'json'
 ```
 
 - app.conf.update
-```
+
+``` 
 app.conf.update(
     task_serializer='json',
     accept_content=['json'],  # Ignore other content
@@ -133,7 +137,7 @@ app.conf.update(
 ```
 - config_from_object
 
-```
+``` 
 app.config_from_object('celeryconfig')
 
 # celeryconfig.py file
@@ -150,7 +154,7 @@ enable_utc = True
 
 - celery main
 
-```
+``` 
 from celery import Celery
 
 # ssh -N -L 6379:127.0.0.1:6379 pi
@@ -170,7 +174,7 @@ include 添加所有任务，根据任务职能分开
 
 - task1
 
-```
+``` 
 from celery_main import app
 
 @app.task
@@ -181,7 +185,7 @@ def add(x, y):
 
 - task2
 
-```
+``` 
 from celery_main import app
 
 @app.task
@@ -200,7 +204,7 @@ use multi
 
 multi -A 可以接多个 app
 
-```
+``` 
 $ celery multi --help
 Usage: celery multi [OPTIONS]
 
@@ -211,7 +215,7 @@ Options:
 ```
 
 
-```
+``` 
 celery multi satrt CELERYD_NODES  -A celery_main worker --loglevel=INFO
 celery multi stop CELERYD_NODES  -A celery_main worker --loglevel=INFO
 ```
