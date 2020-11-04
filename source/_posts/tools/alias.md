@@ -6,7 +6,7 @@ tags: [linux,alias,tools]
 https://github.com/sharkdp/bat
 
 ### alias
-n
+
 ```
 alias cp='cp -v'
 alias mv='mv -v'
@@ -51,3 +51,16 @@ source .bashrc
 sudo timedatectl set-timezone 'Asia/Shanghai'
 ```
 
+### vim
+
+vim ~/.vimrc
+
+```
+syntax on	
+set number 
+set cindent
+set smartindent 
+set showmatch 
+set ruler 
+set mouse=a 
+```
